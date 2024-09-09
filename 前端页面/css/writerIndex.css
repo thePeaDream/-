@@ -1,0 +1,156 @@
+.page{
+    width:100%;
+    height:100%;
+}
+/* 整个标题样式调整 */
+.title{
+    width:100%;
+    height:8%;
+    background-color: aqua;
+    display:flex;
+    align-items:center;
+    border-radius:5px;
+}
+.title h2{
+    margin-left:38px;
+    font-size:40px;
+}
+/* 标题里的空格占位 */
+.title .space{
+    width:215px;
+    height:100%;
+}
+/* 标题里的整个用户输入样式 */
+.title .userInput{
+    /* 使得它的子元素可以相对于这个容器进行绝对定位。 */
+    position: relative; 
+    /* 确保容器的宽度和高度自适应其内容，并且允许在同一行显示多个元素 */
+    display: inline-block;
+}
+/* 标题里的输入框样式 */
+.title .userInput input{
+    width:500px;
+    height:45px;
+    margin-left:108px;
+    margin-right:5px;
+    border-radius:5px;
+    /* 为按钮留出空间 */
+    padding-left:3px;
+    padding-right:80px;
+    padding-top:3px;
+    padding-bottom: 3px;
+    font-size:30px;
+}
+/* 标题里的按钮样式设计 */
+.title .userInput button{
+    /* 绝对定位 */
+    position:absolute;
+    width:80px;
+    /* 按钮高度与.userInput一致 */
+    height:100%;
+    /* 让按钮靠近.userInput的右边缘 */
+    right:0;
+    /* 让按钮靠近.userInput的顶部边缘 */
+    top:0;
+    background-color: orange;
+
+}
+/* 标题里的用户图片样式设计 */
+.title img{
+    width:60px;
+    height:60px;
+    border-radius:100%;
+    margin-left:10px;
+    margin-right:5px;
+}
+
+/* 作者具体界面设计 */
+.container{
+    display:flex;
+    width:100%;
+    height:92%;
+    background-color: darkcyan;
+}
+
+/* 左边界面是导航栏 */
+.left-container{
+    width:20%;
+    height:100%;
+    background-color: gray;
+}
+/* 一级导航 */
+.first{
+    width:100%;
+    height:50px;
+}
+.first button{
+    cursor: pointer; /* 使鼠标悬停时显示手形 */
+    width:100%;
+    height:50px;
+    text-align: center;
+}
+/* 二级导航默认隐藏 */
+.second{
+    cursor: pointer; /* 使鼠标悬停时显示手形 */
+    /* 隐藏2级导航 */
+    display: none;
+}
+
+/* 右边界面是导航栏对应的具体内容 */
+.right-container{
+    width: 80%;
+    height: 100%;
+    /* 自动添加滚动条 */
+    overflow: auto;
+}
+
+.Articles{
+    width:100%;
+    height:100%;
+    margin:0px auto;
+    margin-top:5px;
+}
+.Articles a .Article{
+    width:100%;
+    height:100%;
+    background-color: greenyellow;
+    margin:auto;
+    border-radius:5px;
+    border:0px;
+}
+.Articles a .Article h3{
+    text-align:center;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.Articles a .Article .writerName{
+    text-align:center;
+    font-size:20px;
+    margin-bottom: 5px;
+}
+.Articles a .Article .date{
+    text-align:center;
+    font-size:15px;
+    margin-bottom: 10px;
+}
+.Articles a .Article p{
+    text-indent: 2em;
+    line-height: 30px;
+    font-size:20px;
+    margin-left:25px;
+    margin-right:0px;
+    overflow: hidden; /* 超出部分隐藏 */
+    text-overflow: ellipsis; /* 省略号显示 */
+    height:150px;
+    width:450px;
+}
+
+.Articles a{
+    text-decoration: none;
+    display:block;
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left:310px;
+    width:500px;
+    height:250px;
+}
